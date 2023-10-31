@@ -1,8 +1,7 @@
 pipeline {
     agent any
-    environment {
-        PATH = "C:/Users/kaush/Downloads/apache-maven-3.9.5-bin/apache-maven-3.9.5/bin$PATH"
-        // Add other environment variables as needed
+    tools{
+        maven 'maven'
     }
     stages {
         stage('Checkout') {
